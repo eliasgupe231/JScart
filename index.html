@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <!-- Fontshare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<header>
+    <div class="iconContainer">
+        <img src="./images/head.png" alt="Icono de la marca">
+    </div>
+    <nav class="navbar">    
+            <a href="#" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div id="menuSection" class="menuSection">
+                <ul>
+                    <li><a class="linkToPage" href="">Contacto</a></li>
+                    <li><a class="linkToPage" href="">Productos</a></li>
+                </ul>
+            </div>
+        <ul>
+            <li><a class="linkToPage" href="">Contacto</a></li>
+            <li><a class="linkToPage" href="">Productos</a></li>
+        </ul>
+        <a id="carrito" href="#"><img src="./images/carrito-de-compras (1).png" alt="Carrito de compras"></a>
+    </nav>
+</header>
+<body>
+    <section id="#containerProducts" class="containerProducts">
+        <div class="card" id="cardProduct">
+            <img src="./images/arosDisrupt.png" alt="imagen de aros">
+            <div class="productInformation">
+                <h4>Aros disrupt</h4>
+                <p class="price">$1000</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">  
+            <img src="./images/corazonesCollar.png" alt="imagen de collar">
+            <div class="productInformation">
+                <h4>Collar corazones</h4>
+                <p class="price">$1300</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">
+            <img src="./images/puntoDeluz.png" alt="imagen de collar">
+            <div class="productInformation">
+                <h4>Collar punto de luz</h4>            
+                <p class="price">$1150</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">
+            <img src="./images/pendientesBright.png" alt="imagen de aros">
+            <div class="productInformation">
+                <h4>Pendientes bright</h4>            
+                <p class="price">$800</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">
+            <img src="./images/pendientesBrito.png" alt="imagen de aros">
+            <div class="productInformation">
+                <h4>Pendientes brito</h4>            
+                <p class="price">$650</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">
+            <img src="./images/pendientesCava.png" alt="imagen de aros">
+            <div class="productInformation">
+                <h4>Pendientes cava</h4>            
+                <p class="price">$760</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">
+            <img src="./images/pulseraRolo.png" alt="imagen de collar">
+            <div class="productInformation">
+                <h4 >Pulsera rolo</h3>            
+                <p class="price">$1100</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div>
+        </div>
+        <div class="card" id="cardProduct">
+            <img src="./images/pulseraTorneada.png" alt="imagen de collar">
+            <div class="productInformation">
+                <h4 >Pulsera torneada</h3>            
+                <p class="price">$950</p>
+                <input class="agregarCarrito" type="button" value="Agregar al carrito">
+            </div> 
+        </div>
+    </section>
+    <section class="modal" id="modal">
+        <div class="closemodal">
+            <span id="closemodal">&times;</span>
+        </div>
+        <div id = "modalContainer" class="modalContainer">
+            <div id="carritoContent">
+            </div>
+            <p class="totalAPagar"></p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+<footer>
+
+</footer>
+</html>

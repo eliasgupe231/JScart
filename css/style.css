@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62, 5%;
+}
+header{
+    background-color: black;
+    height: 200px;
+    display: flex;
+}
+.iconContainer{
+    width: 50%;
+}
+.iconContainer img{
+    width: 30%;
+    margin: 15px;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.navbar ul, li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+} 
+#carrito img{
+    width: 10%;
+}
+
+.linkToPage {
+    font-family: 'Switzer', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: relative;     
+    display: inline-block; 
+    text-decoration: none;
+}
+.linkToPage:after{
+    content:" ";
+    position: absolute; 
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+.linkToPage:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left right;
+}
+
+
+.containerProducts{
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.card{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.productInformation{
+    border: solid;
+    border-radius: 0 0 20px 20px;
+    border-color: #d6d6d6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productInformation h4, p{
+    font-family: 'Switzer', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.card img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal{
+    display: none;
+    height: 300px;
+    /* background-color: #000000bd; color para que el fondo se vea opaco el fondo */
+    position: absolute;
+    top: 14%;
+    left: 75%;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    z-index: 10;
+    
+}
+
+.modalContainer{
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 2rem;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.closemodal{
+    position: absolute;
+    z-index: 15;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.carritoContent{
+    width: 100%;
+}
+.containerCarrito{
+    width: 100%;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #ababab;
+    display: flex;
+    align-items: center;
+
+}
+.undoProduct{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.undoProduct:hover{
+    color: #ababab;
+}
+.totalAPagar{
+    font-size: 1rem;
+    font-family: 'Switzer', sans-serif;
+    margin-top: 10px;
+}
+.infoCarritoProduct{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.carritoProductName{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.carritoProductPrice{
+    font-size: 1rem;
+}
+.productQuantity{
+    font-size: 1rem;
+}
+.agregarCarrito{
+    font-family: 'Switzer', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    color: #000000;
+    background-color: #2085be;
+    border-radius: 10px;
+    margin: 4px 4px;
+    border: none;
+}
+.agregarCarrito:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: 600ms;
+    cursor: pointer;
+}
+
+
+.menuSection{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+
+    .navbar ul{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+    }
+    .navbar:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 40px;
+    }
+    #menu{
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin-right: 20px;
+    }
+    #menu span{
+        background-color: #ffffff;
+        width: 100%;
+        height: 5px;
+        display: block;
+        position: absolute;
+    }
+    #menu span:nth-child(2){
+        top: calc(50% - 2.5px);
+    }
+    #menu span:nth-child(3){
+        bottom: 0;
+    }
+    #carrito{
+        width: 100%;
+    }
+}
+
