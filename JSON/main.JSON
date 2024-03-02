@@ -1,5 +1,48 @@
 {
     "id": 1,
-    "nombre":"Pendientes brito",
-    "" 
+    "nombre": "Aros disrupt",
+    "precio": 1000,
+    "imagen" : "aros-disrupt.jpg"
+}
+{
+    "id": 2,
+    "nombre": "Collar corazones",
+    "precio": 1300,
+    "imagen" : "corazonescollar-product.jpg"
+}
+{
+    "id": 3,
+    "nombre": "Punto de luz",
+    "precio": 1150,
+    "imagen" : "pdluz-product.jpg"
+}
+{
+    "id": 4,
+    "nombre": "Pendientes bright",
+    "precio": 800,
+    "imagen" : "pendientes-bright.jpg"
+}
+{
+    "id": 5,
+    "nombre": "Pendientes brito",
+    "precio": 650,
+    "imagen" : "pendientes-brito.jpg"
+}
+{
+    "id": 6,
+    "nombre": "Pendientes cava",
+    "precio": 760,
+    "imagen" : "pendientes-cava.jpg"
+}
+{
+    "id": 7,
+    "nombre": "Pulsera rolo",
+    "precio": 1100,
+    "imagen" : "pulseras-rolo.jpg"
+}
+{
+    "id": 8,
+    "nombre": "Pulsera torneada",
+    "precio": 950,
+    "imagen" : "pulseratorn-product.jpg"
 }
