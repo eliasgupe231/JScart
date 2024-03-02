@@ -22,12 +22,10 @@ const modalContainer = document.querySelector (`#modalContainer`)
 const carritoContent = document.querySelector (`#carritoContent`)
 const carrito = document.querySelector(`#carrito`)
 const closemodal = document.querySelector (`#closemodal`)
-const precioTotal = document.querySelector (`#totalAmount`)
 const undoProduct = document.querySelector (`.undoProduct`)
 const totalAPagar = document.querySelector (`.totalAPagar`)
-
-
-
+const purchaseButton = document.querySelector(`#purchaseButton`)
+const modalCompra = document.querySelector(`.modalCompra`)
 // mostrar y ocultar carrito
 carrito.addEventListener("click", () => {
     modal.style.display = "block"
@@ -43,10 +41,6 @@ containerProduct.addEventListener("click", agregarCarrito)
 
 let carritoProducts = JSON.parse(localStorage.getItem(`carritoProducts`)) || []
 
-
-
-
-
 function agregarCarrito(event){
     event.preventDefault()
     if(event.target.classList.contains("agregarCarrito")){
@@ -56,7 +50,6 @@ function agregarCarrito(event){
             name: product.querySelector(`h4`).textContent,
             price: product.querySelector(`p`).textContent,
         }
-
         const repeat = carritoProducts.some((product) => product.name === productData.name)
         if (repeat){
             const productos = carritoProducts.map ((product) =>{
@@ -108,6 +101,8 @@ const carritoDisplay = () =>{
         total = total + parseInt(product.quantity * product.price.slice(1))
         })
         totalAPagar.innerText = `Precio Total = $${total}`
+        purchaseButton.innerText = `Comprar Ahora`
+
 }
 
 if(carritoProducts = []){
@@ -115,6 +110,9 @@ if(carritoProducts = []){
     <p>Tu carrito esta vacio</p>`
 }
 
+purchaseButton.addEventListener(`click`, () =>{
+    modalCompra.style.display = `block`
+})
 
 const saveLocal =  () => {
     localStorage.setItem("carritoProducts", JSON.stringify(carritoProducts))

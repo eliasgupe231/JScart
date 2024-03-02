@@ -126,7 +126,11 @@ header{
     padding: 2rem 2rem;
     margin: auto;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .closemodal{
     position: absolute;
@@ -197,7 +201,21 @@ header{
     cursor: pointer;
 }
 
-
+#purchaseButton {
+    border-style: none;
+    background-color: #000000;
+    color: #ababab;
+    font-size: 1.0rem;
+    font-style: none;
+    font-family: 'Switzer', sans-serif;
+    margin-top: 10px;
+}
+.modalCompra{
+    display: none;
+    background-color: #ababab;
+    width: 100%;
+    height: 100%;
+}
 .menuSection{
     display: none;
 }
